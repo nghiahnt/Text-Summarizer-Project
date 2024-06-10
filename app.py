@@ -60,9 +60,7 @@ async def process_route(data: DataRequest):
         obj = PredictionPipeline()
         result = obj.predict(data.text, data.levelValue)
         return result
-        
-        # print(data)
-        # return {"result": "ok"}
+
     except Exception as e:
         raise e
 
